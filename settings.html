@@ -63,7 +63,8 @@
               <div class="row">
                   <div class="col-mb-6">
                       <h2>
-                          Post One
+                          <i class="fas fa-cog"></i>
+                          Settings
                       </h2>
                   </div>
               </div>
@@ -84,50 +85,51 @@
                          Save Changes
                     </a>
                   </div>
-                  <div class="col-md-3">
-                    <a  href="index.html" class="btn btn-danger btn-block">
-                         Delete Post
-                    </a>
-                  </div>
               </div>
           </div>
       </section>
 
-      <!-- DETAILS -->
-      <section id="details">
+      <!-- SETTINGS -->
+      <section id="settings">
           <div class="container">
               <div class="row">
                 <div class="col">
                   <div class="card">
                     <div class="card-header">
-                      <h4>Edit Post</h4>
+                      <h4>Edit Settings</h4>
                       <div class="card-body">
                         <form>
-                          <div class="form-group">
-                            <label for="title">Title</label>
-                            <input type="text" class="form-control" id="title" value="Post One">
-                          </div>
-                          <div class="form-group">
-                            <label for="category">Category</label>
-                            <select  id="category" class="form-control">
-                                <option>Web Development</option>
-                                <option>Tech Gadgeds</option>
-                                <option>Business</option>
-                                <option>Health & Wellness</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <label for="image">Upload Image</label>
-                            <div class="custom-file">
-                                <input type="file" class="form-control custom-file-input" id="image" >
-                                <label for="image" class="custom-file-label">Choose File</label>
+                          <fieldset class="form-group">
+                            <legend>Allow User Registration</legend>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input name="allow" type="radio" value="Yes" checked class="form-check-input">
+                                    Yes
+                                </label>
                             </div>
-                            <small class="form-text text-muted">Max Size 3mb</small>
-                          </div>
-                          <div class="form-group">
-                             <label for="body">Body</label>
-                             <textarea id="body" class="form-control" name="editor1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit illo sed dicta laboriosam magnam, voluptate facere reiciendis quas molestiae nostrum labore dolor corrupti, odit beatae tempora eaque nam! Dolore pariatur et laboriosam, voluptate nam quasi obcaecati quaerat facilis a mollitia molestiae officiis explicabo ad quia! Qui omnis fugit eaque officia!</textarea>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input name="allow" type="radio" value="No" class="form-check-input">
+                                    No
+                                </label>
                             </div>
+                        </fieldset>
+
+                          <fieldset class="form-group">
+                            <legend>Homepage Format</legend>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input name="format" type="radio" value="posts" checked class="form-check-input">
+                                    Blog Page
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input name="format" type="radio" value="page" class="form-check-input">
+                                    Home Page
+                                </label>
+                            </div>
+                        </fieldset>
                         </form>
                       </div>
                     </div>
