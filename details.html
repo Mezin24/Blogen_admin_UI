@@ -19,7 +19,7 @@
         
             <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav">
-                <li class="nav-item px-2 active">
+                <li class="nav-item px-2">
                     <a class="nav-link" href="#">Dashbord</a>
                 </li>
                 <li class="nav-item px-2">
@@ -63,7 +63,7 @@
               <div class="row">
                   <div class="col-mb-6">
                       <h2>
-                          <i class="fas fa-cog"></i> Dashboard
+                          Post One
                       </h2>
                   </div>
               </div>
@@ -75,143 +75,64 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-3">
-                    <a  class="btn btn-primary btn-block" data-toggle="modal" data-target="#addPostModal">
-                        <i class="fas fa-plus"></i> Add Post
+                    <a href="index.html" class="btn btn-block btn-light">
+                        <i class="fas fa-arrow-left"></i> Back To Dashnoard
                     </a>
                   </div>
                   <div class="col-md-3">
-                    <a  class="btn btn-success btn-block" data-toggle="modal" data-target="#addCategoryModal">
-                        <i class="fas fa-plus"></i> Add Category
+                    <a href="index.html"  class="btn btn-success btn-block">
+                         Save Changes
                     </a>
                   </div>
                   <div class="col-md-3">
-                    <a  class="btn btn-warning btn-block" data-toggle="modal" data-target="#addUserModal">
-                        <i class="fas fa-plus"></i> Add User
+                    <a  href="index.html" class="btn btn-danger btn-block">
+                         Delete Post
                     </a>
                   </div>
               </div>
           </div>
       </section>
 
-      <!-- POSTS -->
-      <section id="posts">
+      <!-- DETAILS -->
+      <section id="details">
           <div class="container">
               <div class="row">
-                  <div class="col-md-9">
-                      <div class="card">
-                          <div class="card-header">
-                              <h4>Latests Posts</h4>
-                              <table class="table table-striped">
-                                <thead  class="thead-dark">
-                                  <tr>
-                                    <th>#</th>
-                                    <th>Title</th>
-                                    <th>Category</th>
-                                    <th>Date</th>
-                                    <th></th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <th>1</th>
-                                    <td>Post One</td>
-                                    <td>Web Development</td>
-                                    <td>May 10 2011</td>
-                                    <td>
-                                        <a href=".html" class="btn btn-secondary">
-                                            <i class="fas fa-angle-double-right"></i> Details
-                                        </a>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <th>2</th>
-                                    <td>Post Two</td>
-                                    <td>Ecology</td>
-                                    <td>May 23 2019</td>
-                                    <td>
-                                        <a href=".html" class="btn btn-secondary">
-                                            <i class="fas fa-angle-double-right"></i> Details
-                                        </a>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <th>3</th>
-                                    <td>Post Three</td>
-                                    <td>Tech Gadgets</td>
-                                    <td>May 10 2011</td>
-                                    <td>
-                                        <a href=".html" class="btn btn-secondary">
-                                            <i class="fas fa-angle-double-right"></i> Details
-                                        </a>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <th>4</th>
-                                    <td>Post Four</td>
-                                    <td>Business</td>
-                                    <td>May 15 2011</td>
-                                    <td>
-                                        <a href=".html" class="btn btn-secondary">
-                                            <i class="fas fa-angle-double-right"></i> Details
-                                        </a>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <th>5</th>
-                                    <td>Post Five</td>
-                                    <td>Web Development</td>
-                                    <td>May 17 2011</td>
-                                    <td>
-                                        <a href=".html" class="btn btn-secondary">
-                                            <i class="fas fa-angle-double-right"></i> Details
-                                        </a>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <th>6</th>
-                                    <td>Post Six</td>
-                                    <td>Health & Wealness</td>
-                                    <td>May 10 2011</td>
-                                    <td>
-                                        <a href=".html" class="btn btn-secondary">
-                                            <i class="fas fa-angle-double-right"></i> Details
-                                        </a>
-                                    </td>
-                                  </tr>                                 
-                                </tbody>
-                            </table>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4>Edit Post</h4>
+                      <div class="card-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" id="title" value="Post One">
                           </div>
+                          <div class="form-group">
+                            <label for="category">Category</label>
+                            <select  id="category" class="form-control">
+                                <option>Web Development</option>
+                                <option>Tech Gadgeds</option>
+                                <option>Business</option>
+                                <option>Health & Wellness</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="image">Upload Image</label>
+                            <div class="custom-file">
+                                <input type="file" class="form-control custom-file-input" id="image" >
+                                <label for="image" class="custom-file-label">Choose File</label>
+                            </div>
+                            <small class="form-text text-muted">Max Size 3mb</small>
+                          </div>
+                          <div class="form-group">
+                             <label for="body">Body</label>
+                             <textarea id="body" class="form-control" name="editor1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit illo sed dicta laboriosam magnam, voluptate facere reiciendis quas molestiae nostrum labore dolor corrupti, odit beatae tempora eaque nam! Dolore pariatur et laboriosam, voluptate nam quasi obcaecati quaerat facilis a mollitia molestiae officiis explicabo ad quia! Qui omnis fugit eaque officia!</textarea>
+                            </div>
+                        </form>
                       </div>
+                    </div>
                   </div>
-                  <div class="col-md-3">
-                      <div class="card text-center bg-primary text-white mb-3">
-                          <div class="card-body">
-                              <h3>Posts</h3>
-                              <h4 class="h1">
-                                  <i class="fas fa-pencil-alt"></i> 6
-                              </h4>
-                              <a href="posts.html" class="btn btn-outline-light btn-sm">View</a>
-                          </div>
-                      </div>
-                      <div class="card text-center bg-success text-white mb-3">
-                          <div class="card-body">
-                              <h3>Categories</h3>
-                              <h4 class="h1">
-                                  <i class="fas fa-folder"></i> 4
-                              </h4>
-                              <a href="categories.html" class="btn btn-outline-light btn-sm">View</a>
-                          </div>
-                      </div>
-                      <div class="card text-center bg-warning text-white mb-3">
-                          <div class="card-body">
-                              <h3>Users</h3>
-                              <h4 class="h1">
-                                  <i class="fas fa-users"></i> 4
-                              </h4>
-                              <a href="users.html" class="btn btn-outline-light btn-sm">View</a>
-                          </div>
-                      </div>
-                  </div>
+                </div>
               </div>
           </div>
       </section>
@@ -343,8 +264,10 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script src="https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js"></script>
-    <script>
+   
+   <script>
         CKEDITOR.replace( 'editor1' );
+
 
         document.getElementById('year').textContent = new Date().getFullYear()
 </script>
